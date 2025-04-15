@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Live Laugh Re.org</title>
+    <title>I Don't Have LinkedIn</title>
     <style>
       body {
         display: flex;
@@ -12,47 +12,133 @@
         justify-content: flex-start;
         height: 100vh;
         margin: 0;
+        padding: 20px;
         background-color: white;
         color: black;
         font-family:
           -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
           Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 18px;
+        line-height: 1.8; /* Slightly increased for readability */
       }
 
+      .content {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 1.5rem;
+        text-align: left; /* Changed from justify to left */
+      }
+
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 10px;
+      }
+
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: underline;
+      }
+
+      a:focus,
+      a:hover {
+        outline: 2px solid #007bff;
+        outline-offset: 2px;
+      }
+
+      /* Dark mode styles */
       @media (prefers-color-scheme: dark) {
         body {
-          background-color: black;
-          color: white;
+          background-color: #121212;
+          color: #f5f5f5; /* Improved contrast */
         }
-      }
 
-      img {
-        width: 1024px;
-        height: 1024px;
+        h1 {
+          color: #ffffff;
+        }
+
+        p,
+        ul,
+        li {
+          color: #f5f5f5;
+        }
+
+        a {
+          color: #bb86fc;
+        }
+
+        a:focus,
+        a:hover {
+          outline: 2px solid #bb86fc;
+          outline-offset: 2px;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>I Don't Have LinkedIn</h1>
-    <p>
-      My apologies, but I am not on LinkedIn. This is a personal decision and in
-      no way represents my abilities as an employee. Reasons for not being on
-      LinkedIn could include:
-    </p>
-    <ul>
-      <li>My privacy</li>
-      <li>Too much a time commitment</li>
-      <li>Resistance to sharing my social graph</li>
-      <li>...or something else</li>
-    </ul>
-    <p>
-      I ask that you do not hold this against me when interviewing or contacting me for any professional reason.
-      I might or might not want to discuss this, but feel free to ask, but do not be offended if I politely decline
-      to specify my reasons.
-    </p>
-    <p>
-      Cordially,<br />
-      Someone not on LinkedIn
-    </p>
+    <main class="content">
+      <h1>I Don't Have LinkedIn</h1>
+      <p>
+        Thank you for your interest in connecting. My apologies, but I am not on
+        LinkedIn. This is a personal decision and in no way represents my
+        abilities as an employee. I'm happy to connect via
+        [email/phone/professional website] instead.
+      </p>
+      <p>
+        My reasons could include considerations around privacy, time management,
+        and resistance to sharing my social graph, among others.
+      </p>
+      <p>
+        I ask that you do not hold this against me when interviewing or
+        contacting me for any professional reason. While I'm open to discussing
+        this choice if relevant, my focus remains on professional qualifications
+        and potential contributions. My professional qualifications and
+        experience are fully detailed in my resume or portfolio. I look forward
+        to discussing my qualifications and how I can contribute to your
+        organization.
+      </p>
+      <footer>
+        <p>
+          Cordially,<br />
+          Someone not on LinkedIn
+        </p>
+        <p>
+          <a
+            href="https://github.com/djensenius/idonthavelinkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contribute to this letter
+            <span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
